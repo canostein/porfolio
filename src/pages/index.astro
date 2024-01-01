@@ -13,40 +13,40 @@ import Projects from "../components/Projects.astro"
 ---
 
 <Layout
-  title="Porfolio de midudev - Desarrollador y Programador Web con 15 años de experiencia"
+  title="Porfolio de Christian Cano - Desarrollador y Programador"
   description="Contrata a midudev para crear tu aplicación web o móvil. Desarrollador Web y Creador de Contenido. Especializado en crear aplicaciones únicas."
 >
   <main class="px-4">
-    <SectionContainer class="py-44 pb-32">
+    <SectionContainer id="inicio" class="py-44 pb-32">
       <img
         class="rounded-full size-12 mb-4"
-        src="/midudev.webp"
+        src="/img_canostein.jpg"
         alt="midudev photo"
       />
       <h1
         class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
       >
-        Hey, soy midudev <a
+        Hey, soy Christian Cano Stein<a
           href="https://linkedin.com/in/midudev"
           target="_blank"
           rel="noopener"
           class="flex justify-center items-center"
         >
-          <Badge>Disponible para trabajar</Badge>
+          <Badge>Trabajando actualmente...</Badge>
         </a>
       </h1>
       <h2 class="text-xl lg:text-2xl text-balance max-w-[700px]">
-        <span>+15 años de experiencia.</span><span class="text-yellow-200">
-          Desarrollador Web y Creador de Contenido</span
+        <span>+5 años de experiencia.</span><span class="text-yellow-200">
+          Full-Stack Software Developer </span
         >
-         .<span class="text-red-200"> De Barcelona, España</span>.
+         .<span class="text-red-200"> De Capiatá, Paraguay</span>.
         <span class="text-sky-200"
-          >Especializado en crear aplicaciones únicas.</span
+          >Analista/Programador</span
         >
       </h2>
 
       <nav class="flex gap-4 mt-8 flex-wrap">
-        <SocialPill href="https://linkedin.com/in/midudev">
+        <SocialPill href="https://www.linkedin.com/in/christian-cano-stein-965b68251/">
           <LinkedInIcon class="size-4 md:size-6" />
            LinkedIn
         </SocialPill>
@@ -54,9 +54,9 @@ import Projects from "../components/Projects.astro"
           <GitHubIcon class="size-4 md:size-6" />
            GitHub
         </SocialPill>
-        <SocialPill href="mailto:miduga@gmail.com">
+        <SocialPill href="mailto:canostein@gmail.com">
           <MailIcon class="size-4 md:size-6" />
-           miduga@gmail.com
+           canostein@gmail.com
         </SocialPill>
       </nav>
     </SectionContainer>
@@ -76,5 +76,24 @@ import Projects from "../components/Projects.astro"
       </h2>
       <Projects />
     </SectionContainer>
+
+    <SectionContainer id="sobre-mi">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <CodeIcon class="size-7" />
+         Sobre Mi
+      </h2>
+      <Projects />
+    </SectionContainer>
+
+    
+    <SectionContainer id="contacto">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <CodeIcon class="size-7" />
+         Contacto
+      </h2>
+      <Projects />
+    </SectionContainer>
+
+
   </main>
 </Layout>
