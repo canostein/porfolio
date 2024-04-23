@@ -1,28 +1,34 @@
 ---
 import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
-
+import Angular from "./icons/Angular.astro"
+import Sql from "./icons/Sql.astro"
 const TAGS = {
   ANGULAR: {
-    name: "Angular 14",
-    class: "bg-black text-white",
-    icon: NextJS,
+    name: "Angular",
+    class: "bg-[#e71f1fd4] text-white",
+    icon: Angular,
   },
   TAILWIND: {
     name: "Tailwind CSS",
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  SQL: {
+    name: "Sql",
+    class: "bg-[#278ae1] text-white",
+    icon: Sql,
+  },
 }
 const PROJECTS = [
   {
     title: "Machini",
     description:
-      "Sistema creado para la empresa MACHINI para el control de envio de caña dulces en Paraguay a las distintas fabricas de azucar del pais.",
+      "Sistema creado para la empresa MACHINI para el control de envíos de caña dulces en Paraguay a las distintas fábricas de azúcar a nivel país.",
     link: "https://svgl.vercel.app/",
     github: "https://github.com/pheralb/svgl",
-    image: "/porfolio/projects/svgl.webp",
-    tags: [TAGS.ANGULAR, TAGS.TAILWIND],
+    image: "/porfolio/projects/machini.png",
+    tags: [TAGS.ANGULAR, TAGS.SQL],
   },
 ]
 ---

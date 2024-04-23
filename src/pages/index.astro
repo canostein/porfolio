@@ -10,7 +10,9 @@ import Experience from "../components/Experience.astro"
 import Briefcase from "../components/icons/Briefcase.astro"
 import CodeIcon from "../components/icons/Code.astro"
 import Projects from "../components/Projects.astro"
-
+import ContactIcon from "../components/icons/Contact.astro"
+import Contact from "../components/Contact.astro"
+import WhatsappIcon from "../components/icons/Whatsapp.astro"
 ---
 
 <Layout
@@ -28,7 +30,7 @@ import Projects from "../components/Projects.astro"
         class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
       >
         Hey, soy Christian Cano Stein<a
-          href="https://linkedin.com/in/midudev"
+          href="https://linkedin.com/in/canostein"
           target="_blank"
           rel="noopener"
           class="flex justify-center items-center"
@@ -38,9 +40,9 @@ import Projects from "../components/Projects.astro"
       </h1>
       <h2 class="text-xl lg:text-2xl text-balance max-w-[700px]">
         <span>+5 años de experiencia.</span><span class="text-yellow-200">
-          Full-Stack Software Developer </span
+          Full-Stack Software Developer.</span
         >
-         .<span class="text-red-200"> De Capiatá, Paraguay</span>.
+         <span class="text-red-200"> De Paraguay</span>.
         <span class="text-sky-200"
           >Analista/Programador</span
         >
@@ -51,14 +53,18 @@ import Projects from "../components/Projects.astro"
           <LinkedInIcon class="size-4 md:size-6" />
            LinkedIn
         </SocialPill>
-        <SocialPill href="https://github.com/midudev">
-          <GitHubIcon class="size-4 md:size-6" />
+        <SocialPill href="https://github.com/canostein">
+          <GitHubIcon class="size-4 md:size-6"  />
            GitHub
         </SocialPill>
         <SocialPill href="mailto:canostein@gmail.com">
           <MailIcon class="size-4 md:size-6" />
            canostein@gmail.com
         </SocialPill>
+       <!--  <SocialPill href="mailto:canostein@gmail.com">
+          <WhatsappIcon class="size-4 md:size-6" />
+           Whatsapp
+        </SocialPill> -->
       </nav>
     </SectionContainer>
 
@@ -78,22 +84,22 @@ import Projects from "../components/Projects.astro"
       <Projects />
     </SectionContainer>
 
-    <SectionContainer id="sobre-mi">
+    <!--  <SectionContainer id="sobre-mi">
       <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
         <CodeIcon class="size-7" />
          Sobre Mi
       </h2>
       <Projects />
-    </SectionContainer>
+    </SectionContainer>  -->
 
     
-    <SectionContainer id="contacto">
+   <!--  <SectionContainer id="contacto">
       <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
-        <CodeIcon class="size-7" />
+        <ContactIcon class="size-7" />
          Contacto
       </h2>
-      <Projects />
-    </SectionContainer>
+      <Contact />
+    </SectionContainer> -->
 
 
   </main>
